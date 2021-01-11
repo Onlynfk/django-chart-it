@@ -1,4 +1,6 @@
 from messages import Messages
+from seek import Seek
+
 
 
 
@@ -9,12 +11,12 @@ class Auth():
         """
         atm_number = input("Type in your Atm number: ")
         password = input("Type in your password : ")
-        # month, day, cvv
-        if isinstance(atm_number, int) and isinstance(password, int):
-            details = Messages.login_success()
-            return details
-        else: 
+        if atm_number.isdigit() == True and password.isdigit() == True:
+            print( Messages.login_success())
+            Seek.find()
+        else:
             return Messages.login_unsuccessful()
+            
 
 
 

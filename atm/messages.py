@@ -1,9 +1,12 @@
 class Messages():
     def login_success():
-        return "Login in Successfully"
+        return "Login is Successfully"
     
     def login_unsuccessful():
-        return "Wroong Password or Atm Pin "
+        return "Wrong Password or Atm Pin "
     
     def logout():
         return "bye user logged out"
+    
+    def WrongInput():
+        return " Wrong input"
